@@ -1,5 +1,5 @@
 # bertflix
-Movie Recommendation WebSite (Imcomplete)
+Movie Recommendation WebSite that i am currently working on and started in June 2023 (Imcomplete)
 
 I started this to start using java again.
 
