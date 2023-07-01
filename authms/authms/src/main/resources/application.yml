@@ -1,0 +1,38 @@
+server:
+    error:
+        include-message: always
+        include-binding-errors: always
+    port: 8082
+
+spring:
+    datasource:
+        password:
+        url:
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: none
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: true
+        show-sql: true
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: bertflix.email@gmail.com
+        password:
+        properties:
+            mail:
+                smtp:
+                    ssl:
+                        trust: "*"
+                    auth: true
+                    starttls:
+                        enable: true
+                    socketFactory:
+                        port: 465
+                        class: javax.net.ssl.SSLSocketFactory
+                    connectiontimeout: 5000
+                    timeout: 3000
+                    writetimeout: 5000

@@ -20,7 +20,7 @@ public class TMDBService {
                 .url(url)
                 .get()
                 .addHeader("accept", "application/json")
-                .addHeader("Authorization", "Bearer <token>")
+                .addHeader("Authorization", "Bearer <TOKEN>")
                 .build();
 
         Response response = client.newCall(request).execute();
